@@ -111,6 +111,7 @@ form input {
     outline: none;
     text-align: center;
     font-size: var(--md);
+    color: var(--white);
 }
 .content {
     width: 100%;
