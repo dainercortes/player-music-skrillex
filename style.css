@@ -1,0 +1,79 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --green-base: #66CDAA;
+    --background: rgb(193, 255, 243);
+    --black-light: #c6c6c6; 
+    --heart: #E74C3C;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --xl: 30px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover {
+    width: 100%;
+    height: 50vh;
+    background-image: url('./img/skrillex.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cover .arrow-left {
+    margin: 30px 0 0 20px;
+    font-size: var(--xl);
+    width: var(--xl);
+    height: var(--xl);
+    text-align: center;
+
+}
+.cover .info {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 100px 0 0;
+    height: 130px;
+    padding: 10px 35px 10px 15px;
+    box-sizing: border-box;
+}
+.cover .info .title {
+    color: var(--white);
+    font-size: var(--xl);
+    margin-bottom: 8px;
+}
+.cover .info .autor-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.cover .info .autor-list .subtitle {
+    color: var(--black-light);
+    font-size: var(--md);
+}
+.cover .info .autor-list .list-icon {
+    font-size: 24px;
+    color: var(--white);
+}
+.cover .info .hastag {
+    display: inline-block;
+    color: var(--white);
+    font-size: var(--sm);
+    background: linear-gradient(90deg, rgba(0,255,16,1) 0%, rgba(0,202,255,1) 100%);
+    padding: 4px 8px;
+    border-radius: 16px;
+}
